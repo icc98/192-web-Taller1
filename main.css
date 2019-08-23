@@ -1,11 +1,29 @@
 body{
+    
     width: 100%;
+    height: 100%;
     padding: 0%;
     margin: 0%;
+    background: linear-gradient(180deg, #3941BF 0%, #020963 100%);
+    background-repeat: no-repeat;
+    background-size: 2000px 800px; 
+}
+.menu{
+display: flex;
+justify-content: space-around;
+}
+
+.logo{
+flex-basis: 58%;
+}
+.menu__lista{
+flex-basis: 35%;
+align-content: center;
+margin-left:500px ;
+margin-top:10px;
 }
 
 header{
-    background: black;
     width: 100%;
     height: 200px;
     padding: 20px 15px;
@@ -21,10 +39,81 @@ input{
 
 image{
 
-    max-height: 50px;
+    max-height: 30px;
     border: 0;
     display: inline-block;
     vertical-align: middle;
     max-width: 100%;
     height: auto;
+   
+}
+
+.menu__nav ul{
+
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.menu__nav li{
+
+display: inline;
+text-align: center;
+margin: 100px 60px 0px 0px;
+position: relative;
+top: -50px;
+font-size: 24px;
+
+}
+
+.menu__nav li a{
+
+    padding: 2px 7px 2px 7px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    align-items: center;
+}
+.lista {
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.landing__portada{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.portada__foto{
+
+    
+}
+.landing__portada-foto{
+
+    flex-basis: 35%;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+
+}
+
+.portada__texto{
+
+
+    flex-basis: 58%;
+    align-content: center;
+
+}
+.portada__texto-info{
+
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-style: normal;
+    font-size: 50px;
+
 }
