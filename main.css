@@ -91,13 +91,14 @@ font-size: 24px;
 
 .portada__foto{
 
-    
+    flex-basis: 25%;
+    width: 0px;
+    top: 50px;
 }
 .landing__portada-foto{
 
     flex-basis: 35%;
-    width: 100px;
-    height: 100px;
+    width: 0px;
     top: 100px;
 
 }
@@ -149,8 +150,20 @@ font-size: 24px;
 
     font-family: 'Heebo', sans-serif;
     font-size: 20px;
-    color: #444444;
+    color: #454545;
 
+}
+
+.advertising h3 {
+
+    font-size: 40px;
+    color: #454545;
+}
+
+.advertising h4 {
+
+    font-size: 40px;
+    color: #454545;
 }
 
 .advertising__button  {
@@ -170,5 +183,66 @@ font-size: 24px;
     color: white;
 
 }
+
+.characteristics {
+    background-color:#171F29;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 300px;
+    font-family: 'Heebo', sans-serif;
+  }
+
+  .characteristics__first-icono1{
+ 
+    width: 108px;
+    position: relative;
+    top: 20px;
+
+  }
+
+  .characteristics__first-icono2{
+ 
+    width: 108px;
+    position: relative;
+    top: 40px;
+
+  }
+
+  .characteristics__first-icono3{
+ 
+    width: 98px;
+    position: relative;
+    top: 50px;
+
+  }
+
+  .characteristics h5 {
+
+    font-size: 20px;
+  }
+
+  .characteristics h6 {
+
+    font-size: 20px;
+  }
+
+  .characteristics h7 {
+
+    font-size: 20px;
+  }
+  
 
 
