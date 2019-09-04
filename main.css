@@ -109,11 +109,66 @@ font-size: 24px;
     align-content: center;
 
 }
-.portada__texto-info{
+.portada__texto--info{
 
     font-family: 'Heebo', sans-serif;
     color: white;
     font-style: normal;
     font-size: 50px;
+    
 
 }
+
+.advertising {
+
+    background-color: #F7F7F0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+
+}
+
+.advertising__left {
+
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    color: #444444;
+
+}
+
+.advertising__button  {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    font-size: 15px;
+    padding: 0px 20px;
+    background-color: #020963;
+    color: white;
+
+}
+
+
