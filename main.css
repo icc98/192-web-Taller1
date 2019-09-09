@@ -6,7 +6,8 @@ body{
     margin: 0%;
     background: linear-gradient(180deg, #3941BF 0%, #020963 100%);
     background-repeat: no-repeat;
-    background-size: 2000px 800px; 
+    background-size: 2000px 800px;
+    overflow-x:  hidden; 
 }
 .menu{
 display: flex;
@@ -116,6 +117,7 @@ font-size: 24px;
     color: white;
     font-style: normal;
     font-size: 50px;
+    padding: 100px;
     
 
 }
@@ -151,19 +153,22 @@ font-size: 24px;
     font-family: 'Heebo', sans-serif;
     font-size: 20px;
     color: #454545;
+    position: relative;
+    padding: 200px;
 
 }
 
 .advertising h3 {
 
-    font-size: 40px;
-    color: #454545;
+    font-size: 20px;
+    color: #ffffff;
 }
 
-.advertising h4 {
+.advertising__right {
 
     font-size: 40px;
     color: #454545;
+    font-family: 'Heebo', sans-serif;
 }
 
 .advertising__button  {
@@ -177,7 +182,7 @@ font-size: 24px;
     border: none;
     -webkit-transition-duration: 0.4s;
             transition-duration: 0.4s;
-    font-size: 15px;
+    font-size: 10px;
     padding: 0px 20px;
     background-color: #020963;
     color: white;
@@ -187,8 +192,6 @@ font-size: 24px;
 .characteristics {
     background-color:#171F29;
     color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -201,7 +204,7 @@ font-size: 24px;
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 300px;
+    height: 100%;
     font-family: 'Heebo', sans-serif;
   }
 
@@ -209,40 +212,49 @@ font-size: 24px;
  
     width: 108px;
     position: relative;
-    top: 20px;
+    margin-top: 100px;
 
   }
 
-  .characteristics__first-icono2{
+  .characteristics__second-icono2{
  
     width: 108px;
     position: relative;
-    top: 40px;
+    margin-top: 100px;
+
 
   }
 
-  .characteristics__first-icono3{
+  .characteristics__third-icono3{
  
-    width: 98px;
+    width: 108px;
     position: relative;
-    top: 50px;
+    margin-top: 100px;
 
   }
 
-  .characteristics h5 {
+  .characteristics__info {
+
+     display: flex;
+    flex-direction: column;
+  }
+
+  .characteristics__titulo {
 
     font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+
   }
 
-  .characteristics h6 {
+  
 
-    font-size: 20px;
+  .characteristics__contenido {
+
   }
 
-  .characteristics h7 {
+  
+  
 
-    font-size: 20px;
-  }
   
 
 
