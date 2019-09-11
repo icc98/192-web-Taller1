@@ -10,7 +10,7 @@ imagenArray = [
     "url('imagenes/opcion1.png')",
     "url('imagenes/opcion2.png')",
     "url('imagenes/opcion3.png')",
-    "url('imagenes/opcion4.png')",]
+    "url('imagenes/opcion4.png')"]
 
 if (silver != null) {
 
