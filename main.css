@@ -27,7 +27,7 @@
     header{
         width: 100%;
         height: 200px;
-        padding: 20px 15px;
+        
 
     }
 
@@ -93,7 +93,6 @@
     .portada__foto{
 
         flex-basis: 25%;
-        width: 0px;
         top: 50px;
     }
     .landing__portada-foto{
@@ -330,7 +329,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        margin-top: 0px;
+        margin-top: 20px;
         -ms-flex-line-pack: center;
             align-content: center;
         -webkit-box-pack: center;
@@ -567,6 +566,110 @@
         width: 100%;
         height: 600px;
       }
+
+
+
+
+
+      header{
+        min-height: 200px;
+    }
+  
+    .menu{
+    display: block;
+    justify-content: space-around;
+    }
+    
+    .toplogo{
+        float:left;
+    }
+    
+   .topnav {
+      overflow: hidden;
+      float:right;
+      margin: 25px;
+      min-width: 300px;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      font-family: 'Heebo', sans-serif;
+      font-style: normal;
+      align-items: center;
+    }
+
+    .topnav a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius:2px;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 800px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .topnav{
+             min-width: 100%;
+            background: #262d9f;
+            border-radius: 4px; 
+            margin: 15px;
+      }
+
+      .topnav.responsive {
+          position: relative;
+            margin: 15px;
+
+      }
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    
+    section {
+        color: white;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        width: 100%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        font-family: 'Heebo', sans-serif;
+
+    }
 
 
 
