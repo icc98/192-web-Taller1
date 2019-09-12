@@ -7,6 +7,7 @@
                             <title>kipling</title>
                             <link rel="stylesheet" href="main.css">
                             <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                             <script src="main.js"></script>
                             
                         </head>
@@ -36,32 +37,27 @@
                                 
                             </header>
                             
-                            <!-- Landing promocionando nuevo producto -->
-                            <section class="landing">
-                                
-                                <div class="landing__portada">
-                                    
-                                    <div class="portada__texto">
-                                        
-                                        <p class="portada__texto--info">
-                                            Ahora, viajar largas <br>distancias es más fácil<br/>
-                                        </p>
-                                        
-                                    </div>
-                                    
-                                    
-                                    
-                                    
-                                    <div class="portada__foto">
-                                        
-                                        <img class= "portada__foto-maleta" src="imagenes/maletaviaje (4).png">
-                                        
-                                        
-                                    </div>     
-                                    
-                                </div>
-                                
-                            </section>
+<!-- Landing promocionando nuevo producto -->
+<section class="landing">
+
+    <article>
+        <div class="portada__texto">
+            <p class="portada__texto--info">
+                Ahora, viajar largas
+                <br>distancias es más fácil
+                <br/>
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <div class="portada__foto">
+            <img class="portada__foto-maleta" src="imagenes/maletaviaje (4).png">
+        </div>
+    </article>
+
+</section>
+
                             
                             <section id="advertising" class="advertising">
                                 
@@ -200,21 +196,19 @@
                                 </article>
                                 
                             </section>
-                            
+
                             <section class="description">
-                                
-                                
-                                <div class="description__left">
-                                    <img class= "description__left-image" src="imagenes/maletaespecificaciones (2).png">                        
-                                </div>
-                                
-                                <div class="description__list">
-                                    
-                                    
+		
+                                <article class="description__left">
+                                    <img class="description__left-image" src="imagenes/maletaespecificaciones (2).png">
+                                </article>
+                        
+                                <article class="description__list">
+                        
                                     <ul class="description__info">
-                                        
+                        
                                         <h2>Especificaciones:</h2>
-                                        
+                        
                                         <h2>Logotipo redondo de kipling</h2>
                                         <h2>Mono robot de silicona </h2>
                                         <h2>3 compartimentos principales: 1 con cremallera, hebilla <br> y 2 con cremallera</br></h2>
@@ -222,48 +216,67 @@
                                         <h2>3 asas de transporte: 1 superior, 1 lateral, 1 frontal </h2>
                                         <h2>4 ruedas giratorias</h2>
                                     </ul>
-                                    
-                                    
-                                </div>
-                                
+                        
+                                </article>
+                        
                             </section>
                             
                             <section class="newsletter">
 
                                 <article class="newsletter__left">
-                                    <p>¿Deseas recibir información acerca de
-                                        <br> nuestras promociones y nuevos lanzamientos?
-                                        <br>
+                                   
+                                    <div class="newsletter__logo">
+                                        <img class="logo_sello" width="400" src="imagenes/sello.png" alt="">
+                                    </div>
+                                    
+                                    <div class="newsletter__text">
+                                        <p>¿Deseas recibir información acerca de
+                                        <br> nuestras promociones y nuevos lanzamientos?</p>
+                                    </div>
+
+
                                 </article>
+
+    
                         
                                 <article class="newsletter__right">
                         
                                     <div class="newsletter__send">
-                        
-                                        <input type="text" placeholder="Escribe tu correo ">
-                                        <button>
-                                            <h3>Registrarse</h3>
-                                        </button>
+
+                                        <input type="text" placeholder="Escribe tu correo "/>
+                                        
+                                       
                                     </div>
+                                   
+                                    <center><button class="advertising__button">
+                                        <h3>Registrarse</h3>
+                                    </button></center>
                         
                                 </article>
                             </section>
-                                
-                                <footer>
-                                    
-                                    <article class="final__left">
+                            
+                            <section class="footer">
+                         
+
+                                <article class="final__footer">
+                                    <img class="logo" src="imagenes/logoazul.png" alt="">
+                                </article>
+
+                                    <article class="final__footer">
                                         <h5>Sobre nosotros</h5>
-                                        <ul>
+                                      
                                             <a href="#">Acerca de Kipling</a>
                                             <br>
                                             <a href="#">Localizador de tiendas</a>
                                             <br>
-                                        </ul>
+                                            <a href="#"></a>
+                                            <br>
+                                       
                                     </article>
                                     
-                                    <article class="final__center">
+                                    <article class="final__footer">
                                         <h5>Atención al cliente</h5>
-                                        <ul>
+                                        
                                             <a href="#">Contacto</a>
                                             <br>
                                             <a href="#">Envío</a>
@@ -271,26 +284,25 @@
                                             <a href="#">Devoluciones</a>
                                             <br>
                                             
-                                        </ul>
+                                        
                                     </article>
                                     
-                                    <article class="final__right">
+                                    <article class="final__footer">
                                         <h5>Más información</h5>
-                                        <ul>
+                                     
                                             <a href="#">Condiciones generales</a>
                                             <br>
                                             <a href="#">Política de privacidad</a>
                                             <br>
                                             <a href="#">Cookies</a>
                                             <br>
-                                            
-                                            
-                                        </ul>
+                                  
                                     </article>
                                     
                                     
-                                </footer>
-                                
+                          
+                                </section>
+
                                 <script src="main.js"></script>
                                 
                             </body>

@@ -6,7 +6,7 @@
         margin: 0%;
         background: linear-gradient(180deg, #3941BF 0%, #020963 100%);
         background-repeat: no-repeat;
-        background-size: 2000px 800px;
+        background-size: 3000px 800px;
         overflow-x:  hidden; 
     }
     .menu{
@@ -83,6 +83,10 @@
 
     }
 
+    .landing{
+       
+    }
+
     .landing__portada{
 
         display: flex;
@@ -138,6 +142,24 @@
             flex-wrap: wrap;
         font-family: 'Heebo', sans-serif;
         padding: 30px 0px;
+    }
+
+    .advertising__button  {
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-decoration: none;
+        height: 60px;
+        border-radius: 15px;
+        border: none;
+        -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+        font-size: 10px;
+        padding: 0px 20px;
+        background-color: #020963;
+        color: white;
+
     }
 
     .advertising__left {
@@ -264,6 +286,7 @@
         width: 100%;
 
         font-family: 'Heebo', sans-serif;
+        padding: 50px 0;
 
       }
       
@@ -344,12 +367,6 @@
     
       }
 
-
-      .text{
-
-
-
-      }
 
 
       .text__new-products{
@@ -466,6 +483,7 @@
         text-align: center;
         font-family: 'Heebo', sans-serif;
         font-size: 25px;
+        padding: 100px 0;
 
       }
       
@@ -498,7 +516,7 @@
         padding: 10px;
         margin-right: 10px;
         font-family: 'Heebo', sans-serif;
-
+        width: 350px;
       }
       
       .newsletter__send :hover {
@@ -529,6 +547,9 @@
 
       }
 
+      .description__list{
+        margin: 0 25px;
+      }
 
       .final {
         display: -webkit-box;
@@ -588,7 +609,7 @@
 
 
 
-      header{
+    header{
         min-height: 200px;
     }
   
@@ -599,6 +620,7 @@
     
     .toplogo{
         float:left;
+        margin: 15px;
     }
     
    .topnav {
@@ -646,16 +668,22 @@
     }
 
     @media screen and (max-width: 800px) {
-      .topnav{
+        .toplogo{
+            text-align: center;
+            width: 100%;
+        }
+        .topnav{
              min-width: 100%;
             background: #262d9f;
             border-radius: 4px; 
             margin: 15px;
+            margin-right: 0px;
       }
 
       .topnav.responsive {
           position: relative;
             margin: 15px;
+            margin-right: 0px;
 
       }
       .topnav.responsive .icon {
@@ -688,8 +716,35 @@
 
     }
 
+    .footer{
+        background: #F7F7F0;
+        padding: 50px 0;
+    }
 
+    .final__footer{
+        text-align: left;
+    }   
 
+    .final__footer h5{
+        color: #020963;
+        font-size: 20px;
+    }
+
+    .final__footer a{
+        color: #454545;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .newsletter__left{
+        position: relative;
+    }
+
+    .newsletter__text{
+        position: absolute;
+        top: 120px;
+    }
+    
 
   
   

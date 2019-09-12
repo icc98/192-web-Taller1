@@ -12,6 +12,8 @@ imagenArray = [
     "url('imagenes/opcion3.png')",
     "url('imagenes/opcion4.png')"]
 
+    imagen.style.backgroundImage = imagenArray[0];
+
 if (silver != null) {
 
     silver.addEventListener("click", (e) => {
