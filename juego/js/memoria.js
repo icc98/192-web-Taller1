@@ -25,16 +25,16 @@ $(document).ready(function(){
 						//aumentamos los puntos en 1
 						iPuntosObtenidos++;
 						//ocultamos la pareja para que no aparezca mas
-						$(objPrimero).stop(true,true).animate({opacity: 1}).delay(700).animate({opacity: 0});
-						$(objSegundo).stop(true,true).animate({opacity: 1}).delay(700).animate({opacity: 0});
+						$(objPrimero).stop(true,true).animate({opacity: 1}).delay(500).animate({opacity: 0});
+						$(objSegundo).stop(true,true).animate({opacity: 1}).delay(500).animate({opacity: 0});
 						
 						//finalizamos el juego porque ya encontro todas las parejas
 						if(iPuntosObtenidos==$('ul li').length/2) $.fntFinalizarJuego();
 					}else{
 						//el usuario no encontro una pareja, no coinciden los elementos
 						//borramos el contenido de los elementos seleccionados por el usuario
-						$(objPrimero).stop(true,true).animate({opacity: 1},1000,function(){$(this).css('background-image','none');});
-						$(objSegundo).stop(true,true).animate({opacity: 1},1000,function(){$(this).css('background-image','none');});
+						$(objPrimero).stop(true,true).animate({opacity: 1},500,function(){$(this).css('background-image','none');});
+						$(objSegundo).stop(true,true).animate({opacity: 1},500,function(){$(this).css('background-image','none');});
 					}
 				}else{
 					//se esta clickeando sobre el mismo elemento, entonces le devolvemos su opacidad original
@@ -75,10 +75,25 @@ $(document).ready(function(){
 		$('#divContador').find('p').html('<strong>Descuento obtenido: </strong>'+ (iPuntosObtenidos * 5)+ '%' +
 		' &bull; <strong>Tiempo empleado: </strong>'+iTiempoTranscurrido+' segundos');
 		//mostramos la capa inicial
-		$('#divInicio').stop(true,true).fadeIn(1000,function(){
+		/*$('#divInicio').stop(true,true).fadeIn(1000,function(){
 			//$('ul li').stop(true,true).css('opacity',1).html('&nbsp;');
+			$('#btnJugar').hide();
+
 			$('#divInicio').html('Ganaste' + (iPuntosObtenidos * 5)+ '%');
-		});
+		});*/
+		
+		$('#divInicio').show();
+		$('#divInicio').css('background','none');
+		if (iPuntosObtenidos > 0){			
+			$('#divInicio').html('<div style="color: #333;font-size: 60px;padding: 50px;"> <p>Ganaste ' + (iPuntosObtenidos * 5)+ ' %</p><br><p>Utiliza el código: DFGTDSD</p><br><br><div id="divInferior" ><input type="button" value="Regresar" id="btnRegresar2" ></div></div>');
+		}else{
+			$('#divInicio').html('<div style="color: #333;font-size: 60px;padding: 50px;"> <p>Sigue intentando en otra ocación</p><br><br><div id="divInferior" ><input type="button" value="Regresar" id="btnRegresar2" ></div></div>');
+		}
+
+		$('#btnRegresar2').on('click',function(){
+		//iniciamos el juego
+		window.history.back();
+	});
 	};
 	
 	//funcion para iniciar el juego
