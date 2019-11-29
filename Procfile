@@ -1,0 +1,1 @@
+web: node menu.js
