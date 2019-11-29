@@ -1,3 +1,5 @@
+console.log("memoria");
+
 //variables globales para el juego
 var iTiempoTranscurrido=iPuntosObtenidos=0, iTiempoLimite=30, objPrimero;
 var blnJuegoFinalizado=false;
