@@ -10,7 +10,7 @@ $(document).ready(function(){
 	//evento al hacer clic en los items de la lista
 	$('ul li').live('click',function(){
 		if(!blnJuegoFinalizado && $(this).css('opacity')!=0){
-			var strImagen='img/frutas/'+$(this).attr('rel')+'.png';
+			var strImagen='img/elementos/'+$(this).attr('rel')+'.png';
 			if(objPrimero==undefined){
 				objPrimero=$(this);
 				objPrimero.stop(true,true).animate({opacity:.9}).css('background-image','url('+strImagen+')');
