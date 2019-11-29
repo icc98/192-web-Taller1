@@ -1,0 +1,15 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "Final",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isabella Correa",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1",
+    "tone": "^13.8.25"
+  }
+}
