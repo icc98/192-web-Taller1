@@ -11,6 +11,9 @@ $(document).ready(function(){
 	
 	//evento al hacer clic en los items de la lista
 	$('ul li').live('click',function(){
+		var pingPong = new Tone.PingPongDelay("4n", 0.2).toMaster();
+		var drum = new Tone.MembraneSynth().connect(pingPong);
+		drum.triggerAttackRelease("C4", "32n");
 		if(!blnJuegoFinalizado && $(this).css('opacity')!=0){
 			var strImagen='img/elementos/'+$(this).attr('rel')+'.png';
 			if(objPrimero==undefined){
